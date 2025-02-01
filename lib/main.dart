@@ -11,7 +11,8 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: CalenderScreen(),
+      title: "title: 'Horizontal Calendar Demo',",
+      home: CalenderScreen(titel: 'Calendar Single Selection',),
     );
   }
 }
