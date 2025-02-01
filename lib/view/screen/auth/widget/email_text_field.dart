@@ -10,10 +10,8 @@ class EmailTextField extends StatelessWidget {
         focusedBorder: OutlineInputBorder(
           borderRadius: BorderRadius.circular(10),
         ),
-        enabledBorder: OutlineInputBorder(
-          borderRadius: BorderRadius.circular(10)
-
-        ),
+        enabledBorder:
+            OutlineInputBorder(borderRadius: BorderRadius.circular(10)),
         border: OutlineInputBorder(
           borderRadius: BorderRadius.circular(10),
         ),
@@ -21,6 +19,13 @@ class EmailTextField extends StatelessWidget {
           borderRadius: BorderRadius.circular(10),
         ),
       ),
+      validator: (value) {
+        if (value == null || value == "") {
+          return "Email can't be empty";
+        } else if (!(value.toString().contains(".") || value.contains("@"))) {
+          return "please your vaild email";
+        }
+      },
     );
   }
 }
