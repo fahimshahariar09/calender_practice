@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class EmailTextField extends StatelessWidget {
-  const EmailTextField({super.key});
+class PasswordTextField extends StatelessWidget {
+  const PasswordTextField({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -21,10 +21,9 @@ class EmailTextField extends StatelessWidget {
       ),
       validator: (value) {
         if (value == null || value == "") {
-          return "Email can't be empty";
-        } else if (!(value.toString().contains(".") || value.contains("@"))) {
-          return "please your valid email";
+          return "password can't be empty";
         }
+        return "please your valid password";
       },
     );
   }
