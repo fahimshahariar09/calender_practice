@@ -1,6 +1,5 @@
 import 'package:calender_picker/date_picker_widget.dart';
 import 'package:flutter/material.dart';
-import 'package:get/get.dart';
 
 class CalenderScreen extends StatefulWidget {
   const CalenderScreen({super.key, required this.titel});
