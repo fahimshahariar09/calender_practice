@@ -36,6 +36,7 @@ dependencies:
   cupertino_icons: ^1.0.8
   calender_picker: ^2.0.2
   get: ^4.6.6
+  flutter_otp_text_field: ^1.4.0+2
 
 dev_dependencies:
   flutter_test:
