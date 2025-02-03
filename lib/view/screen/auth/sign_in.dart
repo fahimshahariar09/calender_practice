@@ -9,6 +9,12 @@ class SignIn extends StatelessWidget {
       appBar: AppBar(
         title: Text("Sign In"),
       ),
+      body: Padding(
+        padding: const EdgeInsets.symmetric(horizontal: 10),
+        child: Column(
+          children: [],
+        ),
+      ),
     );
   }
 }
