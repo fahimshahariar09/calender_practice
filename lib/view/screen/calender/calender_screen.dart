@@ -60,41 +60,6 @@ class _CalenderScreenState extends State<CalenderScreen> {
             const SizedBox(
               height: 20,
             ),
-            // ElevatedButton(
-            //   onPressed: () async {
-            //     var result = await showModalBottomSheet(
-            //       isScrollControlled: true,
-            //       shape: const RoundedRectangleBorder(
-            //         borderRadius: BorderRadius.vertical(
-            //           top: Radius.circular(20),
-            //           bottom: Radius.zero,
-            //         ),
-            //       ),
-            //       context: context,
-            //       builder: (context) => CustomCalenderPicker(
-            //         returnDateType: ReturnDateType.range,
-            //         initialDateRange: rangeDateTime,
-            //         calenderThema: CalenderThema.dark,
-            //         rangeColor: Colors.grey.withOpacity(.3),
-            //         borderRadius: const BorderRadius.vertical(
-            //           top: Radius.circular(20),
-            //           bottom: Radius.zero,
-            //         ),
-            //       ),
-            //     );
-            //     if (result != null) {
-            //       if (result is DateTimeRange) {
-            //         setState(() {
-            //           rangeDateTime = result;
-            //         });
-            //       }
-            //     }
-            //   },
-            //   child: const Text('Bottom Sheet Example'),
-            // ),
-            // Text(rangeDateTime == null
-            //     ? ''
-            //     : '${rangeDateTime!.start.toString().substring(0, 10)} ~ ${rangeDateTime!.end.toString().substring(0, 10)}')
           ],
         ),
       ),
