@@ -1,3 +1,4 @@
+import 'package:calender/view/screen/auth/widget/email_text_field.dart';
 import 'package:flutter/material.dart';
 
 class ForgetScreen extends StatelessWidget {
@@ -8,6 +9,11 @@ class ForgetScreen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: Text("Forget password"),
+      ),
+      body: Column(
+        children: [
+          EmailTextField(),
+        ],
       ),
     );
   }
