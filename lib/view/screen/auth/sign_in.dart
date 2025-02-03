@@ -1,3 +1,5 @@
+import 'package:calender/view/screen/auth/widget/email_text_field.dart';
+import 'package:calender/view/screen/auth/widget/pass_text_field.dart';
 import 'package:flutter/material.dart';
 
 class SignIn extends StatelessWidget {
@@ -12,7 +14,11 @@ class SignIn extends StatelessWidget {
       body: Padding(
         padding: const EdgeInsets.symmetric(horizontal: 10),
         child: Column(
-          children: [],
+          children: [
+            EmailTextField(),
+            SizedBox(height: 10),
+            PasswordTextField(),
+          ],
         ),
       ),
     );
