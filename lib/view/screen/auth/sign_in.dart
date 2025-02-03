@@ -18,6 +18,13 @@ class SignIn extends StatelessWidget {
             EmailTextField(),
             SizedBox(height: 10),
             PasswordTextField(),
+            SizedBox(height: 10),
+            InkWell(
+              child: SizedBox(
+                height: 40,
+                child: Text("Sign In"),
+              ),
+            )
           ],
         ),
       ),
