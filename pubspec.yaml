@@ -38,6 +38,7 @@ dependencies:
   get: ^4.6.6
   flutter_otp_text_field: ^1.4.0+2
   custom_calender_picker: ^0.1.1
+  percent_indicator: ^4.2.4
 
 dev_dependencies:
   flutter_test:
