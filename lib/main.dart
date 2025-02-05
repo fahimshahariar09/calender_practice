@@ -1,3 +1,4 @@
+import 'package:calender/view/screen/design.dart';
 import 'package:calender/view/screen/percent_circular.dart';
 import 'package:flutter/material.dart';
 
@@ -11,7 +12,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: PercentCircular(),
+      home: Design(),
     );
   }
 }
