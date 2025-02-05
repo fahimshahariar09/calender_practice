@@ -95,8 +95,8 @@ class _PercentCircularState extends State<PercentCircular> {
             max: 100.0,
             value: _value,
             interval: 20,
-            showTicks: true,
-            showLabels: true,
+           // showTicks: true,
+            //showLabels: true,
             enableTooltip: true,
             minorTicksPerInterval: 1,
             onChanged: (dynamic value) {
