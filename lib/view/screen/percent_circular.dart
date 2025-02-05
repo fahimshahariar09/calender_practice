@@ -1,8 +1,16 @@
 import 'package:flutter/material.dart';
 import 'package:percent_indicator/percent_indicator.dart';
+import 'package:syncfusion_flutter_sliders/sliders.dart';
 
-class PercentCircular extends StatelessWidget {
+class PercentCircular extends StatefulWidget {
   const PercentCircular({super.key});
+
+  @override
+  State<PercentCircular> createState() => _PercentCircularState();
+}
+
+class _PercentCircularState extends State<PercentCircular> {
+  double _value = 40.0;
 
   @override
   Widget build(BuildContext context) {
@@ -28,9 +36,9 @@ class PercentCircular extends StatelessWidget {
                   progressColor: Colors.red,
                 ),
               ),
-
             ],
           ),
+
           /// LinearPercentIndicator
           Padding(
             padding: EdgeInsets.all(15.0),
@@ -41,7 +49,7 @@ class PercentCircular extends StatelessWidget {
               animationDuration: 2500,
               percent: 0.8,
               center: Text("80.0%"),
-             // linearStrokeCap: LinearStrokeCap.roundAll,
+              // linearStrokeCap: LinearStrokeCap.roundAll,
               progressColor: Colors.green,
             ),
           ),
@@ -76,12 +84,26 @@ class PercentCircular extends StatelessWidget {
             percent: 0.4,
             center: Text(
               "40 hours",
-              style:
-              TextStyle(fontWeight: FontWeight.bold, fontSize: 20.0),
+              style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20.0),
             ),
             circularStrokeCap: CircularStrokeCap.butt,
             backgroundColor: Colors.yellow,
             progressColor: Colors.red,
+          ),
+          SfSlider(
+            min: 0.0,
+            max: 100.0,
+            value: _value,
+            interval: 20,
+            showTicks: true,
+            showLabels: true,
+            enableTooltip: true,
+            minorTicksPerInterval: 1,
+            onChanged: (dynamic value) {
+              setState(() {
+                _value = value;
+              });
+            },
           ),
         ],
       ),
