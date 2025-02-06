@@ -13,7 +13,7 @@ class Design extends StatelessWidget {
               0.1,
               0.9
             ], colors: [
-              Colors.green.withOpacity(1.0),
+              Colors.green,
               Colors.orange.withBlue(3)
             ])),
       ),
