@@ -19,8 +19,11 @@ class Design extends StatelessWidget {
           child: Column(
             children: [
               Text("data"),
-              Text("data"),Text("data"),
-              Text("data"),Text("data"),Text("data"),
+              Text("data"),
+              Text("data"),
+              Text("data"),
+              Text("data"),
+              Text("data"),
               Text("data"),
             ],
           ),
