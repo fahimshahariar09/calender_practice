@@ -10,7 +10,9 @@ class VideoScreen extends StatelessWidget {
         title: Text("video"),
       ),
       body: Column(
-
+children: [
+  Text("data")
+],
       ),
     );
   }
