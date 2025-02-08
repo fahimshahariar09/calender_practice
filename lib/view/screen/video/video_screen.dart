@@ -9,10 +9,11 @@ class VideoScreen extends StatelessWidget {
       appBar: AppBar(
         title: Text("video"),
       ),
-      body: Column(
-children: [
-  Text("data")
-],
+      body: Padding(
+        padding: const EdgeInsets.symmetric(horizontal: 15),
+        child: Column(
+          children: [Text("data"),],
+        ),
       ),
     );
   }
