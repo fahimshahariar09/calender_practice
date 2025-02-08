@@ -15,7 +15,12 @@ class VideoScreen extends StatelessWidget {
           children: [
             Text("data"),
             Text("data"),
-            Text("data"),Text("data"),
+            Text("data"),
+            Text("data"),
+            Text("data"),  Text("data"),
+            Text("data"),
+            Text("data"),
+            Text("data"),
             Text("data"),
             Text("data"),
           ],
