@@ -9,6 +9,9 @@ class VideoScreen extends StatelessWidget {
       appBar: AppBar(
         title: Text("video"),
       ),
+      body: Column(
+
+      ),
     );
   }
 }
