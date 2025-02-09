@@ -40,6 +40,8 @@ dependencies:
   custom_calender_picker: ^0.1.1
   percent_indicator: ^4.2.4
   syncfusion_flutter_sliders: ^28.2.4
+  video_player: ^2.9.2
+  flick_video_player: ^0.9.0
 
 dev_dependencies:
   flutter_test:
