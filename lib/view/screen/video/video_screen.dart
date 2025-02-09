@@ -15,7 +15,7 @@ class _VideoScreenState extends State<VideoScreen> {
 
   @override
   void initState() {
-flickManager =FlickManager(videoPlayerController: VideoPlayerController.networkUrl(url))
+flickManager =FlickManager(videoPlayerController: VideoPlayerController.networkUrl(Uri.parse("uri")));
     super.initState();
   }
 
