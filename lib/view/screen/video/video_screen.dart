@@ -15,9 +15,12 @@ class _VideoScreenState extends State<VideoScreen> {
   @override
   void initState() {
     flickManager = FlickManager(
-        videoPlayerController:
-            VideoPlayerController.networkUrl(Uri.parse("https://flutter.github.io/assets-for-api-docs/assets/videos/bee.mp4"
-            )));
+      videoPlayerController: VideoPlayerController.networkUrl(
+        Uri.parse(
+          "https://flutter.github.io/assets-for-api-docs/assets/videos/bee.mp4",
+        ),
+      ),
+    );
     super.initState();
   }
 
@@ -27,15 +30,7 @@ class _VideoScreenState extends State<VideoScreen> {
       appBar: AppBar(
         title: Text("video"),
       ),
-      body: Padding(
-        padding: const EdgeInsets.symmetric(horizontal: 15),
-        child: Column(
-          children: [
-            Text("data"),
-            Text("data"),
-          ],
-        ),
-      ),
+      body: Center(),
     );
   }
 }
