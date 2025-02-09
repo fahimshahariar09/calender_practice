@@ -30,7 +30,10 @@ class _VideoScreenState extends State<VideoScreen> {
       appBar: AppBar(
         title: Text("video"),
       ),
-      body: Center(),
+      body: Center(
+        child: AspectRatio(aspectRatio: 20/10
+        child: ,),
+      ),
     );
   }
 }
