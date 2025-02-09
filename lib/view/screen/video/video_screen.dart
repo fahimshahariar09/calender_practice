@@ -1,7 +1,18 @@
+import 'package:flick_video_player/flick_video_player.dart';
 import 'package:flutter/material.dart';
 
-class VideoScreen extends StatelessWidget {
+class VideoScreen extends StatefulWidget {
   const VideoScreen({super.key});
+
+  @override
+  State<VideoScreen> createState() => _VideoScreenState();
+}
+
+class _VideoScreenState extends State<VideoScreen> {
+
+  late FlickManager flickManager;
+
+
 
   @override
   Widget build(BuildContext context) {
