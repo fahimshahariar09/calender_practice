@@ -10,15 +10,16 @@ class VideoScreen extends StatefulWidget {
 }
 
 class _VideoScreenState extends State<VideoScreen> {
-
   late FlickManager flickManager;
 
   @override
   void initState() {
-flickManager =FlickManager(videoPlayerController: VideoPlayerController.networkUrl(Uri.parse("uri")));
+    flickManager = FlickManager(
+        videoPlayerController:
+            VideoPlayerController.networkUrl(Uri.parse("https://flutter.github.io/assets-for-api-docs/assets/videos/bee.mp4"
+            )));
     super.initState();
   }
-
 
   @override
   Widget build(BuildContext context) {
