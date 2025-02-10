@@ -6,7 +6,11 @@ class Tabbar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: TabBar(tabs: []),
+      body: TabBar(tabs: [
+        Tab(
+          icon: Icon(Icons.arrow_back),
+        )
+      ]),
     );
   }
 }
