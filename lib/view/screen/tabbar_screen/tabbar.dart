@@ -9,7 +9,9 @@ class Tabbar extends StatelessWidget {
       appBar: AppBar(
         title: Text('Tabbar'),
       ),
-      body: TabBar(tabs: [
+      body: TabBar(
+
+          tabs: [
         Tab(
           icon: Icon(Icons.arrow_back),
           text: 'BACK',
