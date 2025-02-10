@@ -6,6 +6,9 @@ class Tabbar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        title: Text('Tabbar'),
+      ),
       body: TabBar(tabs: [
         Tab(
           icon: Icon(Icons.arrow_back),
