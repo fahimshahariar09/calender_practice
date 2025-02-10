@@ -17,6 +17,9 @@ class Tabbar extends StatelessWidget {
         Tab(
           icon: Icon(Icons.arrow_back),
           text: 'BACK',
+        ), Tab(
+          icon: Icon(Icons.arrow_back),
+          text: 'BACK',
         ),
       ]),
     );
