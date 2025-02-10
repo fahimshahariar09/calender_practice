@@ -1,5 +1,6 @@
 import 'package:calender/view/screen/design.dart';
 import 'package:calender/view/screen/percent_circular.dart';
+import 'package:calender/view/screen/tabbar_screen/tabbar.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -12,7 +13,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: Design(),
+      home: Tabbar(),
     );
   }
 }

@@ -12,7 +12,12 @@ class Tabbar extends StatelessWidget {
       body: TabBar(tabs: [
         Tab(
           icon: Icon(Icons.arrow_back),
-        )
+          text: 'BACK',
+        ),
+        Tab(
+          icon: Icon(Icons.arrow_back),
+          text: 'BACK',
+        ),
       ]),
     );
   }
