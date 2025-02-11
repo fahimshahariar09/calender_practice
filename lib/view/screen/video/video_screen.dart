@@ -31,9 +31,12 @@ class _VideoScreenState extends State<VideoScreen> {
         title: Text("video"),
       ),
       body: Center(
-        child: AspectRatio(aspectRatio: 20/10,
-        child: FlickVideoPlayer(flickManager: flickManager
-        ),),
+        child: AspectRatio(
+          aspectRatio: 20 / 10,
+          child: FlickVideoPlayer(
+            flickManager: flickManager,
+          ),
+        ),
       ),
     );
   }
