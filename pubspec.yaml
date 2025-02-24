@@ -42,6 +42,7 @@ dependencies:
   syncfusion_flutter_sliders: ^28.2.4
   video_player: ^2.9.2
   flick_video_player: ^0.9.0
+  table_calendar: ^3.0.9
 
 dev_dependencies:
   flutter_test:
