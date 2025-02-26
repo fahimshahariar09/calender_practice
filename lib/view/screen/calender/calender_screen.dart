@@ -9,10 +9,6 @@ class CalenderScreen extends StatefulWidget {
 }
 
 class _CalenderScreenState extends State<CalenderScreen> {
-
-  late DataTime _selectedDay;
-  late DataTime _focusedDay;
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
