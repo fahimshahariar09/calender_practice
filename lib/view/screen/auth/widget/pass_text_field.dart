@@ -21,9 +21,11 @@ class PasswordTextField extends StatelessWidget {
       ),
       validator: (value) {
         if (value == null || value == "") {
-          return "password can't be empty";
+          return "Password can't empty.";
+        } else if (value.length < 8) {
+          return "Password can't less than 8 digits.";
         }
-        return "please your valid password";
+        return null;
       },
     );
   }
