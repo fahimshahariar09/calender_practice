@@ -18,8 +18,7 @@ class Design extends StatelessWidget {
                   colors: [Colors.green, Colors.orange.withBlue(3)])),
           child: Column(
             children: [
-              Text("data"),
-              Text("data"),
+
 
             ],
           ),
