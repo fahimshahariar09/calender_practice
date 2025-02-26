@@ -24,6 +24,10 @@ class PasswordTextField extends StatelessWidget {
           return "Password can't empty.";
         } else if (value.length < 8) {
           return "Password can't less than 8 digits.";
+        } else if (!(RegExp('[A-Z]').hasMatch(value) &&
+            RegExp('[a-z]').hasMatch(value) &&
+            RegExp('[0-9]').hasMatch(value))) {
+          return "Password not secure";
         }
         return null;
       },
