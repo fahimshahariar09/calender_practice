@@ -25,9 +25,14 @@ class Design extends StatelessWidget {
       //   ),
       // ),
       body: ListView.separated(
-          itemBuilder: (context, index) {},
-          separatorBuilder,
-          itemCount: 1),
+        itemBuilder: (context, index) {
+          return Text("data");
+        },
+        itemCount: 10,
+        separatorBuilder: (context,index) {
+          return Divider();
+        },
+      ),
     );
   }
 }
