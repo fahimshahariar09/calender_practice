@@ -33,6 +33,7 @@ class Design extends StatelessWidget {
       //     return Divider();
       //   },
       // ),
+      body: ListView.custom(childrenDelegate:  SliverChildListDelegate(context,index){}),
     );
   }
 }
