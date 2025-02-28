@@ -1,6 +1,9 @@
-
 import 'package:get/get.dart';
 
-class NavigationBar extends GetxController{
+class BottomNavController extends GetxController {
+  var selectedIndex = 0.obs; // Observable variable
 
+  void changeIndex(int index) {
+    selectedIndex.value = index;
+  }
 }

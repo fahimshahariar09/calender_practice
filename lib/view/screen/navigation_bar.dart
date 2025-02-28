@@ -1,10 +1,33 @@
+import 'package:calender/view/controller/getx/navigation_bar.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
-class NavigationBar extends StatelessWidget {
-  const NavigationBar({super.key});
+class NavigationBarScreen extends StatelessWidget {
+  final List<Widget> _screens = [
+    Center(child: Text('🏠 Home', style: TextStyle(fontSize: 24))),
+    Center(child: Text('🔍 Search', style: TextStyle(fontSize: 24))),
+    Center(child: Text('👤 Profile', style: TextStyle(fontSize: 24))),
+  ];
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    final BottomNavController controller = Get.put(BottomNavController());
+    return Scaffold(
+      body: Obx(() =>
+          _screens[controller.selectedIndex.value]), // Dynamic screen update
+      bottomNavigationBar: Obx(
+        () => BottomNavigationBar(
+          currentIndex: controller.selectedIndex.value,
+          onTap: controller.changeIndex,
+          selectedItemColor: Colors.blue,
+          unselectedItemColor: Colors.grey,
+          items: [
+            BottomNavigationBarItem(icon: Icon(Icons.home), label: "Home"),
+            BottomNavigationBarItem(icon: Icon(Icons.search), label: "Search"),
+            BottomNavigationBarItem(icon: Icon(Icons.person), label: "Profile"),
+          ],
+        ),
+      ),
+    );
   }
 }

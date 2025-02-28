@@ -1,6 +1,5 @@
-import 'package:calender/view/screen/auth/otp_screen.dart';
-import 'package:calender/view/screen/auth/sign_in.dart';
-import 'package:calender/view/screen/design.dart';
+
+import 'package:calender/view/screen/navigation_bar.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -13,7 +12,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: Design(),
+      home: NavigationBarScreen(),
   );
 }
 }
