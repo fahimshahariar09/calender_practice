@@ -1,3 +1,4 @@
+import 'package:calender/view/screen/design.dart';
 import 'package:flutter/material.dart';
 
 class Tabbar extends StatelessWidget {
@@ -9,9 +10,7 @@ class Tabbar extends StatelessWidget {
       appBar: AppBar(
         title: Text('Tabbar'),
       ),
-      body: TabBar(
-
-          tabs: [
+      body: TabBar(tabs: [
         Tab(
           icon: Icon(Icons.arrow_back),
           text: 'BACK',
@@ -19,9 +18,16 @@ class Tabbar extends StatelessWidget {
         Tab(
           icon: Icon(Icons.arrow_back),
           text: 'BACK',
-        ), Tab(
-          icon: Icon(Icons.arrow_back),
-          text: 'BACK',
+        ),
+        InkWell(
+          onTap: () {
+            Navigator.push(
+                context, MaterialPageRoute(builder: (context) => Design()));
+          },
+          child: Tab(
+            icon: Icon(Icons.arrow_back),
+            text: 'BACK',
+          ),
         ),
       ]),
     );
