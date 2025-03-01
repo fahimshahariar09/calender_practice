@@ -4,8 +4,7 @@ import 'package:get/get.dart';
 
 class NavigationBarScreen extends StatelessWidget {
   final List<Widget> _screens = [
-    Center(child: Text('🏠 Home', style: TextStyle(fontSize: 24))),
-    Center(child: Text('🔍 Search', style: TextStyle(fontSize: 24))),
+
     Center(child: Text('👤 Profile', style: TextStyle(fontSize: 24))),
   ];
 
