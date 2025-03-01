@@ -5,8 +5,7 @@ import 'package:get/get.dart';
 class NavigationBarScreen extends StatelessWidget {
   final List<Widget> _screens = [
 
-    Center(child: Text('👤 Profile', style: TextStyle(fontSize: 24))),
-  ];
+   ];
 
   @override
   Widget build(BuildContext context) {
