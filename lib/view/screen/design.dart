@@ -35,7 +35,12 @@ class Design extends StatelessWidget {
       // ),
       // body: ListView.custom(childrenDelegate:  SliverChildListDelegate(children[])),
       appBar: AppBar(
-        title: Text("data"),
+        title: Text("Design"),
+      ),
+      body: Column(
+        children: [
+          Text("data")
+        ],
       ),
     );
   }
