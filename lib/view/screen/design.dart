@@ -44,6 +44,9 @@ class Design extends StatelessWidget {
           Text("data"),
           Text("data"),
           Container(
+            height: 20,
+            width: 50,
+            decoration: BoxDecoration(),
             child: Text("data"),
           )
         ],
