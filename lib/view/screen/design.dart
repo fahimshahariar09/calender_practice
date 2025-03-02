@@ -46,7 +46,9 @@ class Design extends StatelessWidget {
           Container(
             height: 20,
             width: 50,
-            decoration: BoxDecoration(),
+            decoration: BoxDecoration(
+              borderRadius: BorderRadius.circular(10)
+            ),
             child: Text("data"),
           )
         ],
