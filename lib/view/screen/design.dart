@@ -40,9 +40,7 @@ class Design extends StatelessWidget {
       body: Column(
         children: [
           Text("data"),
-          Text("data"),
-          Text("data"),
-          Text("data"),
+
           Container(
             height: 20,
             width: 50,
@@ -50,7 +48,7 @@ class Design extends StatelessWidget {
               borderRadius: BorderRadius.circular(10)
             ),
             child: Text("data"),
-          )
+          ),
         ],
       ),
     );
