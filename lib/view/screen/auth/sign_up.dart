@@ -9,10 +9,15 @@ class SignUp extends StatelessWidget {
       appBar: AppBar(
         title: Text("data"),
       ),
-      body: Column(
-        children: [
+      body: SingleChildScrollView(
+        child: Padding(
+          padding: const EdgeInsets.symmetric(horizontal: 15),
+          child: Column(
+            children: [
 
-        ],
+            ],
+          ),
+        ),
       ),
     );
   }
