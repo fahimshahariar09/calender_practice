@@ -9,6 +9,11 @@ class SignUp extends StatelessWidget {
       appBar: AppBar(
         title: Text("data"),
       ),
+      body: Column(
+        children: [
+
+        ],
+      ),
     );
   }
 }
