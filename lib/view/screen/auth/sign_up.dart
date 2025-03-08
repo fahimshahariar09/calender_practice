@@ -18,6 +18,8 @@ class SignUp extends StatelessWidget {
               Text("data"),
               Text("data"),Text("data"),
               Text("data"),
+              Text("data"), Text("data"),Text("data"),
+              Text("data"),
               Text("data"),
             ],
           ),
