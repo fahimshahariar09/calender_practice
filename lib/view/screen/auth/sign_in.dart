@@ -11,15 +11,17 @@ class SignIn extends StatelessWidget {
       appBar: AppBar(
         title: Text("Sign In"),
       ),
-      body: Padding(
-        padding: const EdgeInsets.symmetric(horizontal: 10),
-        child: Column(
-          children: [
-            EmailTextField(),
-            SizedBox(height: 10),
-            PasswordTextField(),
-            SizedBox(height: 20),
-          ],
+      body: SingleChildScrollView(
+        child: Padding(
+          padding: const EdgeInsets.symmetric(horizontal: 10),
+          child: Column(
+            children: [
+              EmailTextField(),
+              SizedBox(height: 10),
+              PasswordTextField(),
+              SizedBox(height: 20),
+            ],
+          ),
         ),
       ),
     );
