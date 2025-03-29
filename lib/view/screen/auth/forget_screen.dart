@@ -10,10 +10,13 @@ class ForgetScreen extends StatelessWidget {
       appBar: AppBar(
         title: Text("Forget password"),
       ),
-      body: Column(
-        children: [
-          EmailTextField(),
-        ],
+      body: Padding(
+        padding: const EdgeInsets.symmetric(horizontal: 15),
+        child: Column(
+          children: [
+            EmailTextField(),
+          ],
+        ),
       ),
     );
   }
