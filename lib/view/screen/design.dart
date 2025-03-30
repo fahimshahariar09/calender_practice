@@ -37,10 +37,13 @@ class Design extends StatelessWidget {
       appBar: AppBar(
         title: Text("Design"),
       ),
-      body: Column(
-        children: [
-          Text("data")
-        ],
+      body: Padding(
+        padding: const EdgeInsets.symmetric(horizontal: 10),
+        child: Column(
+          children: [
+            Text("data")
+          ],
+        ),
       ),
     );
   }
