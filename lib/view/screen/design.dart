@@ -37,12 +37,14 @@ class Design extends StatelessWidget {
       appBar: AppBar(
         title: Text("Design"),
       ),
-      body: Padding(
-        padding: const EdgeInsets.symmetric(horizontal: 10),
-        child: Column(
-          children: [
-            Text("data")
-          ],
+      body: SingleChildScrollView(
+        child: Padding(
+          padding: const EdgeInsets.symmetric(horizontal: 10),
+          child: Column(
+            children: [
+              Text("data")
+            ],
+          ),
         ),
       ),
     );
