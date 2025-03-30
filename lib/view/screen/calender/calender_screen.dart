@@ -15,10 +15,13 @@ class _CalenderScreenState extends State<CalenderScreen> {
       appBar: AppBar(
         title: Text("Calender"),
       ),
-      body: TableCalendar(
-        focusedDay: DateTime.utc(2020, 1, 1),
-        lastDay: DateTime.now(),
-        firstDay: DateTime.utc(2020, 1, 1),
+      body: Padding(
+        padding: const EdgeInsets.symmetric(horizontal: 10),
+        child: TableCalendar(
+          focusedDay: DateTime.utc(2020, 1, 1),
+          lastDay: DateTime.now(),
+          firstDay: DateTime.utc(2020, 1, 1),
+        ),
       ),
     );
   }
